@@ -517,6 +517,36 @@ body {
   flex-grow: 1;
 }
 
+.portfolio-content ul {
+  column-count: 2;
+  column-gap: 1em;
+}
+.portfolio-content ul li {
+  break-inside: avoid;
+}
+.portfolio-content ul li + li {
+  margin-top: 1em;
+}
+.portfolio-content ul li div {
+  position: relative;
+}
+.portfolio-content ul li div img {
+  display: block;
+}
+.portfolio-content ul li div p {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  background-color: var(--white-color);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.portfolio-content ul li div:hover p {
+  display: flex;
+}
+
 /* contact */
 .contact .container {
   padding-top: 2em;
