@@ -12,6 +12,7 @@ An online repository of Patrick Karuri
 - Serve with Live Server
 
 ## link to live site on GitHub Pages
+https://pkariithi.github.io/portfolio/
 
 ## copyright and license information
 (c) 2022. Patrick Karuri
