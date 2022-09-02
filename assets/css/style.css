@@ -250,11 +250,12 @@ input[type=search],
 input[type=number],
 select,
 textarea {
-  padding: 11px 25px;
+  padding: 11px 16px;
   border: 1px solid var(--form-border-color);
   background-color: var(--form-bg);
   border-radius: var(--form-border-radius);
-  color: var(--black-color)
+  color: var(--black-color);
+  font-family: inherit;
 }
 textarea {
   resize: vertical;
@@ -387,6 +388,10 @@ body {
 /* branding */
 .branding {
   background-color: var(--bg-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 .branding-logo h1 {
   border: 4px solid var(--red-color);
@@ -400,6 +405,9 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 5em;
+}
+.branding-nav nav .mobile-menu {
+  display: none;
 }
 .branding-nav nav ul {
   display: flex;
@@ -420,6 +428,7 @@ body {
   background-color: var(--bg-color);
   position: relative;
   overflow: hidden;
+  margin-top: 73px;
 }
 .hero::after {
   content: '';
@@ -621,4 +630,77 @@ footer .container {
 }
 .footer-copyright p {
   color: var(--white-color);
+}
+
+/* responsiveness */
+@media (max-width:1080px){
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width:1024px){
+}
+@media (max-width:960px){
+}
+@media (max-width:800px){
+  .hero::after {
+    margin-right: -250px;
+  }
+  .hero .container {
+    flex-direction: column;
+    align-content: center;
+    gap: 2em;
+  }
+  .hero-content-cta a {
+    display: flex;
+    justify-content: center;
+  }
+  .about .container {
+    flex-direction: column-reverse;
+  }
+  .contact-content {
+    flex-direction: column;
+  }
+  .contact-content-details {
+    padding: 0;
+    margin-bottom: 1em;
+    flex-basis: 100%;
+  }
+  .contact-contect-form {
+    flex-basis: 100%;
+  }
+}
+@media (max-width:768px){}
+@media (max-width:640px){
+  .branding-nav {
+    gap: 1em;
+  }
+  .portfolio-content ul {
+    column-count: 1;
+  }
+  .contact-content-form-third-width {
+    flex-basis: 100%;
+  }
+}
+@media (max-width:600px){}
+@media (max-width:480px){
+  .branding-nav nav ul {
+    display: none;
+  }
+  .branding-nav nav .mobile-menu {
+    display: block;
+  }
+  .hero-content {
+    gap: 1.5em;
+  }
+  .hero-content-stats ul {
+    padding-left: 0;
+  }
+}
+@media (max-width:360px){
+  .hero::after {
+    width: 400px;
+    height: 400px;
+    margin-right: -200px;
+  }
 }
