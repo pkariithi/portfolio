@@ -333,6 +333,24 @@ input[type=submit]:hover {
   'opsz' 48
 }
 
+.section-title {
+  position: relative;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 3px solid var(--red-color);
+  width: 60px;
+}
+.section-title-centered:after {
+  left: 50%;
+  margin-left: -30px;
+}
+
 /* structure */
 html {
   background-color: var(--white-color);
@@ -402,16 +420,15 @@ body {
 .hero-content {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 3em;
 }
 .hero-content-main h1 {
-  font-size: 4em;
+  font-size: 5em;
   line-height: 1;
   color: var(--red-color);
 }
 .hero-content-main p {
-  margin-top: 0.5em;
-  font-size: 1.2em;
+  font-size: 1.8em;
 }
 
 .hero-content-stats ul {
@@ -432,5 +449,37 @@ body {
 }
 
 .hero-img img {
+  display: block;
   width: 400px;
+}
+
+/* about */
+.about .container {
+  gap: 1em;
+}
+
+.about-img {
+  flex-basis: calc(35% - 1em);
+}
+.about-img img {
+  display: block;
+  border: 3px solid var(--red-color);
+  padding: 1em 1em 0;
+}
+
+.about-content {
+  flex-basis: 65%;
+}
+.about-content h2 {
+  font-size: 2em;
+}
+.about-content p {
+  line-height: 1.2;
+}
+.about-content p + p {
+  margin-top: 1em;
+}
+
+.about-content-cta {
+  margin-top: 2em;
 }
