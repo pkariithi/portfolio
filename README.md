@@ -1,6 +1,8 @@
 # Project or program name
 Portfolio
 
+![Portfolio Screenshot](https://raw.githubusercontent.com/pkariithi/portfolio/master/screenshot.png?v=1)
+
 ## author name
 Patrick Karuri
 
