@@ -1,12 +1,11 @@
-# Project or program name
-Portfolio
+# Portfolio
 
 ![Portfolio Screenshot](https://raw.githubusercontent.com/pkariithi/portfolio/master/screenshot.png?v=1)
 
-## author name
+## Author
 Patrick Karuri
 
-## description of project
+## Description of project
 An online repository of Patrick Karuri.
 
 ### NOTE:
@@ -17,13 +16,13 @@ These include:
 - Menu on mobile
 - Submitting the contact form
 
-## project setup instructions
+## Project setup instructions
 - Clone repo
 - Open in VS Code
 - Serve with Live Server
 
-## link to live site on GitHub Pages
+## Link to live site on GitHub Pages
 https://pkariithi.github.io/portfolio/
 
-## copyright and license information
+## Copyright and license information
 (c) 2022. Patrick Karuri
