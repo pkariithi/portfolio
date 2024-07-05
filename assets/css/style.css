@@ -538,6 +538,7 @@ body {
 }
 .portfolio-content ul li div {
   position: relative;
+  border: 3px solid red;
 }
 .portfolio-content ul li div img {
   display: block;

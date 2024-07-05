@@ -9,6 +9,7 @@ An online repository of Patrick Karuri.
 
 ### NOTE:
 Some functionality that requires Javascript or a server side language have not been done.
+
 These include:
 - Fixed header height
 - Menu on mobile
